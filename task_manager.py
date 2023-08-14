@@ -12,6 +12,7 @@ class TaskManager:
             print("Task Added Successfully")
         except TypeError as e:
             print("Error adding task {}".format(e))
+            
     def do_update_task(self, title, attribute, new_val):
         """A method that updates any attribute except priority"""
         task_to_update = None
