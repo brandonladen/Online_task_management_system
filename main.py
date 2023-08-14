@@ -19,7 +19,7 @@ def main():
         if choice == "1":
             title = input("Enter task title: ")
             description = input("Enter task description: ")
-            due_date = input("Enter task due date (DD-MM-YYY): ")
+            due_date = input("Enter task due date (DD-MM-YYYY): ")
             task_manager.do_add_task(title, description, due_date)
 
         elif choice == "2":
