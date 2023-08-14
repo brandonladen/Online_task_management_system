@@ -38,7 +38,7 @@ class TaskManager:
             else:
                 print("Invalid attribute specified")
         else:
-            print(f"Task '{title}' not found")
+            print("Task '{}' not found".format(title))
 
     def do_delete_task(self, title):
         """A method thats deletes a task that whose title has been provided by the user"""
@@ -51,9 +51,9 @@ class TaskManager:
 
         if task_to_remove:
             self.all_tasks.remove(task_to_remove)
-            print(f"Task '{title}' deleted successfully")
+            print("Task '{}' deleted successfully".format(title))
         else:
-             print(f"Task '{title}' not found")
+             print("Task '{}' not found". format(title))
 
     def do_view_task(self):
         """A method that prints a task in dictionary representation"""
