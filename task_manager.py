@@ -53,7 +53,7 @@ class TaskManager:
             self.all_tasks.remove(task_to_remove)
             print("Task '{}' deleted successfully".format(title))
         else:
-             print("Task '{}' not found". format(title))
+             print("Task '{}' not found".format(title))
 
     def do_view_task(self):
         """A method that prints a task in dictionary representation"""
