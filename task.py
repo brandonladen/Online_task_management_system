@@ -5,9 +5,9 @@ class Task:
 
     def __init__(self, title, description, due_date):
         """Class Task constructor"""
-        self.title = title
-        self.description = description
-        self.due_date = due_date
+        self.__title = title
+        self.__description = description
+        self.__due_date = due_date
         self.priority = Task.next_priority
         Task.next_priority += 1
         self.status = "Pending"
